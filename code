@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+
+int main() {
+ 
+ int a,b,opt;
+    printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n");
+    printf("Enter option :");
+    scanf("%d",&opt);
+    printf("enter  two numbers : ");
+    scanf("%d %d",&a,&b);
+    switch (opt)
+    {
+    case 1 :
+    printf("Addition of numbers is %d",a+b);
+
+        break;
+        case 2: 
+         printf("Subtraction of numbers is %d",a-b);
+
+         break;
+         case 3 :
+         printf("Multiplication of numbers is %d",a*b);
+
+         break;
+    case 4: 
+    printf("Division of numbers is %d",a/b);
+
+         break;
+    default:
+    printf("Enter correct option");
+        break;
+    }
+
+    return 0;
+}
